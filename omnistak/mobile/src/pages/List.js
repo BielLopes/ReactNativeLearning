@@ -17,7 +17,7 @@ export default function List(){
                 })
 
                 socket.on('booking_response', book => {
-                    Alert.alert(`Sua reserva em  ${book.spot.company} em ${book.date} foi ${book.aproved? 'APROVADA': 'REJEITADA'}`); //isso é um ifen ternário
+                    Alert.alert(`Sua reserva em  ${book.spot.company} em ${book.date} foi ${book.aproved? 'APROVADA': 'REJEITADA'}`); //isso é um if ternário
                 });    
             })
     }, []);

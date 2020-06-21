@@ -28,6 +28,27 @@ const HomeScreen = (props) => {
           props.navigation.navigate("Image")
         }}
       />
+      <TouchableOpacity 
+        onPress={() => {
+          props.navigation.navigate("Counter");
+        }}
+        >
+        <Text>Go to Count Demo</Text>
+      </TouchableOpacity>
+      <Button 
+        title="Go to Image Demo"
+        onPress={() =>{
+          //console.log("Button pressed")
+          props.navigation.navigate("Color");
+        }}
+      />
+      <TouchableOpacity 
+        onPress={() => {
+          props.navigation.navigate("Square");
+        }}
+        >
+        <Text>Go to Square Demo</Text>
+      </TouchableOpacity>
     </View>
   );
 };
